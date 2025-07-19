@@ -1,8 +1,8 @@
 :root {
   --dark-blue: #0b2b9c;
   --blue: #2244bc;
-  --main-font: "poppins";
-  --aux-font: "roboto";
+  --main-font: "poppins", Arial;
+  --aux-font: "roboto", Arial;
 }
 
 * {
@@ -23,14 +23,15 @@ body {
 .container {
   width: 948px;
   margin: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   overflow: visible;
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
 }
 
 a {
   text-decoration: none;
   color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -40,6 +41,10 @@ img {
 .active {
   border-bottom: 2px solid #fff;
   padding-bottom: 5px;
+}
+
+button {
+  box-shadow: none;
 }
 
 button:hover {
@@ -80,7 +85,7 @@ button:hover {
 
 #main-header .main-nav a:hover {
   padding-bottom: 7px;
-  border-bottom: 3px solid #ffc603;
+  border-bottom: 3px solid #8b79f7;
   font-weight: 600;
 }
 
@@ -120,6 +125,7 @@ button:hover {
   margin: 1rem;
   width: 190px;
   height: 55px;
+  border: none;
   border-radius: 5px;
   color: var(--blue);
   font-size: 1.05rem;
@@ -127,6 +133,7 @@ button:hover {
   text-transform: uppercase;
   text-align: left;
   padding-left: 10px;
+  box-shadow: none;
 }
 
 .showcase button:hover {
